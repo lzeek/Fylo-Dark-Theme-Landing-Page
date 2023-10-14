@@ -8,6 +8,10 @@
 
     --font-heading: 'Raleway', sans-serif;
     --font-body: 'Open Sans', sans-serif;
+
+    --accent-cyan: hsl(176, 68%, 64%);
+    --accent-blue: hsl(198, 60%, 50%);
+    --accent-light-red:hsl(0, 100%, 63%);
     
 }
 

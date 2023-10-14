@@ -1,0 +1,19 @@
+{
+  "name": "fylo-dark-theme-landing-page",
+  "version": "1.0.0",
+  "description": "Frontent mentor project using tailwind",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzeek/fylo-dark-theme-landing-page.git"
+  },
+  "author": "Luzuko Bubu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lzeek/fylo-dark-theme-landing-page/issues"
+  },
+  "homepage": "https://github.com/lzeek/fylo-dark-theme-landing-page#readme"
+}
