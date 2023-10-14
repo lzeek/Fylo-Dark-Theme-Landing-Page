@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root{
+    --primary-dark-blue: hsl(217, 28%, 15%);
+    --primary2-dark-blue: hsl(218, 28%, 13%);
+    --primary3-dark-blue: hsl(216, 53%, 9%);
+    --primary4-dark-blue: hsl(219, 30%, 18%);
+
+    --font-heading: 'Raleway', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    
+}
+
+body{
+    font-family: var(--font-body);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-heading);
+}
