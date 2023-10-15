@@ -30,10 +30,12 @@
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <!--"-->
+
   <body class="bg-[color:var(--primary2-dark-blue)]">
-    <header class="bg-[color:var(--primary-dark-blue)]">
-      <div class="grid grid-cols-2 px-4 py-4 lg:px-20 lg:py-10">
+    <header class="bg-[color:var(--primary-dark-blue)] grid">
+      <div
+        class="grid grid-cols-2 px-4 py-4 container pt-10 justify-self-center"
+      >
         <img alt="logo" src="./images/logo.svg" class="object-contain w-auto" />
         <div class="flex justify-end items-center">
           <ul class="flex gap-4 text-white font-normal">
@@ -50,6 +52,7 @@
         </div>
       </div>
     </header>
+    <!--Intro-->
     <section
       class="text-center bg-contain bg-[url('/images/bg-curvy-desktop.svg')] bg-[color:var(--primary-dark-blue)] bg-bottom bg-no-repeat p-4"
     >
@@ -62,7 +65,7 @@
           />
         </div>
         <h1
-          class="text-white text-center text-4xl font-bold font-[var(--font-heading)] leading-relaxed"
+          class="text-white text-center text-4xl font-bold font-[var(--font-heading)]"
         >
           All your files in one secure location <br />
           accessible anywhere.
@@ -79,8 +82,11 @@
         </button>
       </div>
     </section>
-    <section class="mt-10 p-4">
-      <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:px-[150px]">
+    <!--Features-->
+    <section class="py-[50px] p-4 grid">
+      <div
+        class="grid grid-cols-1 gap-5 lg:grid-cols-2 justify-self-center container"
+      >
         <!--Col01-->
         <article
           class="text-white grid items-center lg:w-[80%] justify-self-center"
@@ -148,7 +154,8 @@
         </article>
       </div>
     </section>
-    <section class="mt-10 p-4 grid">
+    <!--Stay productive section-->
+    <section class="py-[50px] p-4 grid">
       <div
         class="grid grid-cols-1 lg:grid-cols-2 justify-self-center container"
       >
@@ -158,32 +165,128 @@
             src="/images/illustration-stay-productive.png"
           />
         </div>
-        <div>
-          <h2>Stay productive, wherever you are</h2>
-          <p>
+        <div class="self-center">
+          <h2
+            class="text-white text-start text-4xl font-bold font-[var(--font-heading)]"
+          >
+            Stay productive,<br />
+            wherever you are
+          </h2>
+          <p class="my-4 text-white text-lg">
             Never let location be an issue when accessing your files. Fylo has
-            you covered for all of your file storage needs. Securely share files
-            and folders with friends, family and colleagues for live
-            collaboration. No email attachments required.
+            you covered for all of your file storage needs.<br /><br />
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
           </p>
-          <button>See how Fylo works</button>
+          <button class="text-[var(--accent-cyan)] flex gap-1 items-center">
+            <span>See how Fylo works</span>
+            <img alt="" src="/images/icon-arrow.svg" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--Testmonials-->
+    <section class="grid py-[50px]">
+      <div class="container justify-self-center">
+        <img alt="" src="/images/bg-quotes.png" class="-ml-2 -mb-2" />
+        <div class="grid grid-cols-3 gap-4">
+          <!--prof01-->
+          <div class="grid bg-[color:var(--primary-dark-blue)] p-5">
+            <p class="text-white text-md mb-5 mt-4">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="flex gap-2">
+              <img
+                alt=""
+                src="/images/profile-1.jpg"
+                class="w-10 rounded-full"
+              />
+              <div class="flex flex-col text-white">
+                <p>Satish Patel</p>
+                <span class="text-[8pt]">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+          <!--prof02-->
+          <div class="grid bg-[color:var(--primary-dark-blue)] p-5">
+            <p class="text-white text-md mb-5 mt-4">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="flex gap-2">
+              <img
+                alt=""
+                src="/images/profile-2.jpg"
+                class="w-10 rounded-full"
+              />
+              <div class="flex flex-col text-white">
+                <p>Bruce McKenzie</p>
+                <span class="text-[8pt]">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+          <!--prof02-->
+          <div class="grid bg-[color:var(--primary-dark-blue)] p-5">
+            <p class="text-white text-md mb-5 mt-4">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="flex gap-2">
+              <img
+                alt=""
+                src="/images/profile-3.jpg"
+                class="w-10 rounded-full"
+              />
+              <div class="flex flex-col text-white">
+                <p>Iva Boyd</p>
+                <span class="text-[8pt]">Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="container grid justify-self-center">
+        <div
+          class="w-[70%] bg-[var(--primary-dark-blue)] justify-self-center p-8"
+        >
+          <h2
+            class="text-white text-center text-4xl font-bold font-[var(--font-heading)]"
+          >
+            Get early access today
+          </h2>
+          <p class="my-4 text-white text-center text-lg">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+          <form>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+              <input
+                type="email"
+                placeholder="email@example"
+                class="lg:w-[80%] w-full rounded-full p-2"
+              />
+              <button
+                class="scale-100 hover:scale-105 hover:bg-[var(--accent-cyan)] w-[220px] rounded-full justify-self-center p-2 hover:cursor-pointer bg-[color:var(--accent-blue)] text-white font-semibold"
+              >
+                Get Started For Free
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
 
-    Fylo has improved our team productivity by an order of magnitude. Since
-    making the switch our team has become a well-oiled collaboration machine.
-    Satish Patel Founder & CEO, Huddle Fylo has improved our team productivity
-    by an order of magnitude. Since making the switch our team has become a
-    well-oiled collaboration machine. Bruce McKenzie Founder & CEO, Huddle Fylo
-    has improved our team productivity by an order of magnitude. Since making
-    the switch our team has become a well-oiled collaboration machine. Iva Boyd
-    Founder & CEO, Huddle Get early access today It only takes a minute to sign
-    up and our free starter tier is extremely generous. If you have any
-    questions, our support team would be happy to help you. Get Started For Free
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua +1-543-123-4567
-    example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy
+    Huddle Get Started For Free Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us
+    Terms Privacy
 
     <footer>
       <p class="attribution">
