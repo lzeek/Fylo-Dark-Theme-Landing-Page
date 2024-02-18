@@ -54,7 +54,7 @@
     </header>
     <!--Intro-->
     <section
-      class="text-center bg-contain bg-[url('/images/bg-curvy-desktop.svg')] bg-[color:var(--primary-dark-blue)] bg-bottom bg-no-repeat p-4"
+      class="text-center bg-contain sm:bg-[url('/images/bg-curvy-mobile.svg')] bg-[url('/images/bg-curvy-desktop.svg')] bg-[color:var(--primary-dark-blue)] bg-bottom bg-no-repeat p-4"
     >
       <div class="grid">
         <div class="justify-self-center">
@@ -187,9 +187,9 @@
     </section>
     <!--Testmonials-->
     <section class="grid py-[50px]">
-      <div class="container justify-self-center">
+      <div class="container justify-self-center p-4">
         <img alt="" src="/images/bg-quotes.png" class="-ml-2 -mb-2" />
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
           <!--prof01-->
           <div class="grid bg-[color:var(--primary-dark-blue)] p-5">
             <p class="text-white text-md mb-5 mt-4">
@@ -251,9 +251,9 @@
       </div>
     </section>
     <section class="grid">
-      <div class="container grid justify-self-center">
+      <div class="container grid justify-self-center py-[80px] px-4">
         <div
-          class="w-[70%] bg-[var(--primary-dark-blue)] justify-self-center p-8"
+          class="lg:w-[70%] bg-[var(--primary-dark-blue)] justify-self-center p-8"
         >
           <h2
             class="text-white text-center text-4xl font-bold font-[var(--font-heading)]"
@@ -266,14 +266,18 @@
             would be happy to help you.
           </p>
           <form>
-            <div class="grid grid-cols-1 lg:grid-cols-2">
-              <input
-                type="email"
-                placeholder="email@example"
-                class="lg:w-[80%] w-full rounded-full p-2"
-              />
+            <div class="grid grid-cols-12">
+              <div class="col-span-12 lg:col-span-8 self-start">
+                <input
+                  type="email"
+                  placeholder="email@example"
+                  class="w-full rounded-full p-2 col-span-12 my-4 p-x"
+                />
+                <span class="p-0">Valid email required</span>
+              </div>
               <button
-                class="scale-100 hover:scale-105 hover:bg-[var(--accent-cyan)] w-[220px] rounded-full justify-self-center p-2 hover:cursor-pointer bg-[color:var(--accent-blue)] text-white font-semibold"
+                class="col-span-12 lg:col-span-4 h-auto self-start hover:scale-105 hover:bg-[var(--accent-cyan)] w-full rounded-full justify-self-center p-2 hover:cursor-pointer bg-[color:var(--accent-blue)] text-white font-semibold"
+                type="button"
               >
                 Get Started For Free
               </button>
@@ -283,17 +287,42 @@
       </div>
     </section>
 
-    Huddle Get Started For Free Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us
-    Terms Privacy
+    Huddle Get Started For Free  About Us Jobs
+    Press Blog Contact Us Terms Privacy
 
     <footer>
-      <p class="attribution">
+      <div>
+        <img alt="" src="/images/logo.svg" />
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 text-white">
+        <!--Location-->
+        <div>
+          <img alt="" src="/images/icon-location.svg" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+        <!--Contact email+num-->
+        <ul>
+          <li class="flex">
+            <img  alt="" src="/images/icon-phone.svg"/>
+            <p>+1-543-123-4567</p>
+          </li>
+          <li>
+            <img  alt="" src="/images/icon-phone.svg"/>
+            <a href="mailto:example@fylo.com">example@fylo.com</a href="mailto:example@fylo.com">
+          </li>
+        </ul>
+      </div>
+      <p class="flex justify-center bg-black text-white text-[9pt]">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          class="text-blue"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Luzuko Bubu</a>.
+        >. Coded by <a href="#" class="text-blue"> Luzuko Bubu</a>.
       </p>
     </footer>
   </body>
